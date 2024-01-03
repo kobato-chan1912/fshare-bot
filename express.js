@@ -10,7 +10,7 @@ app.get('/getfshare', (req, res) => {
     let fshareLink = req.query.link;
     
     (async () => {
-        const browser = await puppeteerBrowser.launch({ headless: 'new', userDataDir: 'myUserDataDir1', });
+        const browser = await puppeteerBrowser.launch({ headless: 'new', userDataDir: 'data/myUserDataDir1', });
         // const browser = await puppeteerBrowser.launch({headless:false});
         const page = await browser.newPage();
         try {
